@@ -34,92 +34,115 @@
 <div class="container position-sticky z-index-sticky top-0">
   <div class="row">
     <div class="col-12">
-      <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 p-2 start-0 end-0 mx-4">
+      <nav class="navbar navbar-expand-lg bg-success blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 p-2 start-0 end-0 mx-4">
         <div class="container-fluid px-0">
           <a class="navbar-brand font-weight-bolder ms-sm-3 text-sm" href=" " data-placement="bottom">
             Biblioteca Ghedin
           </a>
           <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon mt-2">
-            <span class="navbar-toggler-bar bar1"></span>
-            <span class="navbar-toggler-bar bar2"></span>
-            <span class="navbar-toggler-bar bar3"></span>
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
             </span>
           </button>
           <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+            
             <ul class="navbar-nav navbar-nav-hover ms-auto">
 
-              <li class="nav-item dropdown dropdown-hover mx-2">
+              <li class="nav-item dropdown dropdown-hover mx-2 d-none d-lg-block">
                 <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="material-symbols-rounded opacity-6 me-2 text-md">dashboard</i>
                   Biografia
                   <i class="material-symbols-rounded arrow ms-auto ms-md-2 text-white">keyboard_arrow_down</i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
-                  <div class="d-none d-lg-block">
-                    <a href="./pages/sobreprof.html" class="dropdown-item border-radius-md">
-                      <span>Sobre o professor</span>
-                    </a>
-                    <a href="./pages/linhas.html" class="dropdown-item border-radius-md">
-                      <span>Linhas de pesquisa</span>
-                    </a>
-                  </div>
+                  <a href="./pages/sobreprof.html" class="dropdown-item border-radius-md">
+                    <span>Sobre o professor</span>
+                  </a>
+                  <a href="./pages/linhas.html" class="dropdown-item border-radius-md">
+                    <span>Linhas de pesquisa</span>
+                  </a>
+                </div>
+              </li>
+              
+              <li class="nav-item d-lg-none">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" data-bs-toggle="collapse" href="#collapseBiografia" aria-expanded="false" aria-controls="collapseBiografia">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">dashboard</i>
+                  Biografia
+                  <i class="material-symbols-rounded arrow ms-auto ms-md-2 text-white">keyboard_arrow_down</i>
+                </a>
+                <div class="collapse" id="collapseBiografia">
+                  <a href="./pages/sobreprof.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;">
+                    <span>Sobre o professor</span>
+                  </a>
+                  <a href="./pages/linhas.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;">
+                    <span>Linhas de pesquisa</span>
+                  </a>
                 </div>
               </li>
 
-              <li class="nav-item dropdown dropdown-hover mx-2">
+
+              <li class="nav-item dropdown dropdown-hover mx-2 d-none d-lg-block">
                 <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="material-symbols-rounded opacity-6 me-2 text-md">view_day</i>
                   Produções
                   <i class="material-symbols-rounded arrow ms-auto ms-md-2 text-white">keyboard_arrow_down</i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
-                  <div class="d-none d-lg-block">
-                    <a href="./pages/artigospublicados.html" class="dropdown-item border-radius-md">
-                      <span>Artigos publicados</span>
-                    </a>
-                    <a href="./pages/livros-capitulos.html" class="dropdown-item border-radius-md">
-                      <span>Livros e Capítulos</span>
-                    </a>
-                    <a href="./pages/trabalhos-em-congresso.html" class="dropdown-item border-radius-md">
-                      <span>Trabalhos em congresso</span>
-                    </a>
-                    <a href="./pages/outraspublicacoes.html" class="dropdown-item border-radius-md">
-                      <span>Outras publicações</span>
-                    </a>
-                    <a href="./pages/producaotecnica.html" class="dropdown-item border-radius-md">
-                      <span>Produção técnica</span>
-                    </a>
-                  </div>
+                  <a href="./pages/artigospublicados.html" class="dropdown-item border-radius-md"><span>Artigos publicados</span></a>
+                  <a href="./pages/livros-capitulos.html" class="dropdown-item border-radius-md"><span>Livros e Capítulos</span></a>
+                  <a href="./pages/trabalhos-em-congresso.html" class="dropdown-item border-radius-md"><span>Trabalhos em congresso</span></a>
+                  <a href="./pages/outraspublicacoes.html" class="dropdown-item border-radius-md"><span>Outras publicações</span></a>
+                  <a href="./pages/producaotecnica.html" class="dropdown-item border-radius-md"><span>Produção técnica</span></a>
                 </div>
               </li>
 
-              <li class="nav-item dropdown dropdown-hover mx-2">
+              <li class="nav-item d-lg-none">
+                 <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" data-bs-toggle="collapse" href="#collapseProducoes" aria-expanded="false" aria-controls="collapseProducoes">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">view_day</i>
+                  Produções
+                  <i class="material-symbols-rounded arrow ms-auto ms-md-2 text-white">keyboard_arrow_down</i>
+                </a>
+                <div class="collapse" id="collapseProducoes">
+                  <a href="./pages/artigospublicados.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Artigos publicados</span></a>
+                  <a href="./pages/livros-capitulos.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Livros e Capítulos</span></a>
+                  <a href="./pages/trabalhos-em-congresso.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Trabalhos em congresso</span></a>
+                  <a href="./pages/outraspublicacoes.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Outras publicações</span></a>
+                  <a href="./pages/producaotecnica.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Produção técnica</span></a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown dropdown-hover mx-2 d-none d-lg-block">
                 <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="material-symbols-rounded opacity-6 me-2 text-md">article</i>
                   Atividades
                   <i class="material-symbols-rounded arrow ms-auto ms-md-2 text-white">keyboard_arrow_down</i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
-                  <div class="d-none d-lg-block">
-                    <a href="./pages/orientacoes.html" class="dropdown-item border-radius-md">
-                      <span>Orientações</span>
-                    </a>
-                    <a href="./pages/projetos.html" class="dropdown-item border-radius-md">
-                      <span>Projetos</span>
-                    </a>
-                    <a href="./pages/participacao-em-bancas.html" class="dropdown-item border-radius-md">
-                      <span>Participação em bancas</span>
-                    </a>
-                    <a href="./pages/eventos-palestras.html" class="dropdown-item border-radius-md">
-                      <span>Eventos e Palestras</span>
-                    </a>
-                    <a href="./pages/divulgacaocientifica.html" class="dropdown-item border-radius-md">
-                      <span>Divulgação Científica</span>
-                    </a>
-                  </div>
+                  <a href="./pages/orientacoes.html" class="dropdown-item border-radius-md"><span>Orientações</span></a>
+                  <a href="./pages/projetos.html" class="dropdown-item border-radius-md"><span>Projetos</span></a>
+                 <a href="./pages/participacao-em-bancas.html" class="dropdown-item border-radius-md"><span>Participação em bancas</span></a>
+                  <a href="./pages/eventos-palestras.html" class="dropdown-item border-radius-md"><span>Eventos e Palestras</span></a>
+                  <a href="./pages/divulgacaocientifica.html" class="dropdown-item border-radius-md"><span>Divulgação Científica</span></a>
                 </div>
               </li>
+
+              <li class="nav-item d-lg-none">
+                 <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" data-bs-toggle="collapse" href="#collapseAtividades" aria-expanded="false" aria-controls="collapseAtividades">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">article</i>
+                  Atividades
+                  <i class="material-symbols-rounded arrow ms-auto ms-md-2 text-white">keyboard_arrow_down</i>
+                </a>
+                <div class="collapse" id="collapseAtividades">
+                  <a href="./pages/orientacoes.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Orientações</span></a>
+                  <a href="./pages/projetos.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Projetos</span></a>
+                  <a href="./pages/participacao-em-bancas.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Participação em bancas</span></a>
+                  <a href="./pages/eventos-palestras.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Eventos e Palestras</span></a>
+                  <a href="./pages/divulgacaocientifica.html" class="dropdown-item border-radius-md text-white" style="padding-left: 2rem !important;"><span>Divulgação Científica</span></a>
+                </div>
+              </li>
+              
               <li class="nav-item ms-lg-auto">
                 <a class="nav-link nav-link-icon me-2" href="./pages/about-us.html">
                   <p class="d-inline text-sm z-index-1 font-weight-semibold" data-bs-placement="bottom">Sobre</p>
@@ -149,241 +172,98 @@
 </header>
 
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-
-<section class="pt-3 pb-4" id="count-stats">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9 mx-auto py-3">
-        <div class="row">
-          <div class="col-md-4 position-relative">
-            <div class="p-3 text-center">
-              <h1 class="text-gradient text-dark"><span id="state1" countTo="70">0</span>+</h1>
-              <h5 class="mt-3">Coded Elements</h5>
-              <p class="text-sm font-weight-normal">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+  <section class="pt-3 pb-4" id="count-stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mx-auto py-3">
+          <div class="row">
+            <div class="col-md-4 position-relative">
+              <div class="p-3 text-center">
+                <h1 class="text-gradient text-dark"><span id="state1" countTo="30">0</span>+</h1>
+                <h5 class="mt-3">Anos de Atuação </h5>
+                <p class="text-sm font-weight-normal">Dedicados à docência, pesquisa e extensão acadêmica no ensino superior.</p>
+              </div>
+              <hr class="vertical dark">
             </div>
-            <hr class="vertical dark">
-          </div>
-          <div class="col-md-4 position-relative">
-            <div class="p-3 text-center">
-              <h1 class="text-gradient text-dark"> <span id="state2" countTo="15">0</span>+</h1>
-              <h5 class="mt-3">Design Blocks</h5>
-              <p class="text-sm font-weight-normal">Mix the sections, change the colors and unleash your creativity</p>
+            <div class="col-md-4 position-relative">
+              <div class="p-3 text-center">
+                <h1 class="text-gradient text-dark"> <span id="state2" countTo="600">0</span>+</h1>
+                <h5 class="mt-3">Publicações</h5>
+                <p class="text-sm font-weight-normal">Soma de artigos, livros, trabalhos técnicos e todas as demais produções acadêmicas.</p>
+              </div>
+              <hr class="vertical dark">
             </div>
-            <hr class="vertical dark">
-          </div>
-          <div class="col-md-4">
-            <div class="p-3 text-center">
-              <h1 class="text-gradient text-dark" id="state3" countTo="4">0</h1>
-              <h5 class="mt-3">Pages</h5>
-              <p class="text-sm font-weight-normal">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+            <div class="col-md-4 position-relative">
+              <div class="p-3 text-center">
+                <h1 class="text-gradient text-dark"> <span id="state3" countTo="200">0</span>+</h1>
+                <h5 class="mt-3">Orientações</h5>
+                <p class="text-sm font-weight-normal">Soma de trabalhos de TCC, mestrado e doutorado orientados e concluídos.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-<div class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 ms-auto">
-        <h4 class="mb-1">Thank you for your support!</h4>
-        <p class="lead mb-0">We deliver the best web products</p>
-      </div>
-      <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
-        <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" class="btn btn-twitter mb-0 me-2" target="_blank">
-          <i class="fab fa-twitter me-1"></i> Tweet
-        </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit" class="btn btn-facebook mb-0 me-2" target="_blank">
-          <i class="fab fa-facebook-square me-1"></i> Share
-        </a>
-        <a href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit" class="btn btn-pinterest mb-0 me-2" target="_blank">
-          <i class="fab fa-pinterest me-1"></i> Pin it
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-
-</div>
-
-
-  
-
-  <footer class="footer pt-5 mt-5">
-  <div class="container">
-    <div class=" row">
-      <div class="col-md-3 mb-4 ms-auto">
-        <div>
-          <a href="https://www.creative-tim.com/product/material-kit">
-            <img src="./assets/img/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
-          </a>
-          <h6 class="font-weight-bolder mb-4">Material Kit 3</h6>
-        </div>
-        <div>
-          <ul class="d-flex flex-row ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
-                <i class="fab fa-facebook text-lg opacity-8"></i>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
-                <i class="fab fa-twitter text-lg opacity-8"></i>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
-                <i class="fab fa-dribbble text-lg opacity-8"></i>
-              </a>
-            </li>
-
-
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
-                <i class="fab fa-github text-lg opacity-8"></i>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">
-                <i class="fab fa-youtube text-lg opacity-8"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="col-md-2 col-sm-6 col-6 mb-4">
-        <div>
-          <h6 class="text-sm">Company</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
-                About Us
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
-                Freebies
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                Premium Tools
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-sm-6 col-6 mb-4">
-        <div>
-          <h6 class="text-sm">Resources</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://iradesign.io/" target="_blank">
-                Illustrations
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
-                Bits & Snippets
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
-                Affiliate Program
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-sm-6 col-6 mb-4">
-        <div>
-          <h6 class="text-sm">Help & Support</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
-                Contact Us
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
-                Knowledge Center
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-mk2-footer" target="_blank">
-                Custom Development
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
-                Sponsorships
-              </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
-        <div>
-          <h6 class="text-sm">Legal</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/terms-of-service" target="_blank">
-                Terms & Conditions
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/privacy-policy" target="_blank">
-                Privacy Policy
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
-                Licenses (EULA)
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <div class="text-center">
-          <p class="text-dark my-4 text-sm font-weight-normal">
-            All rights reserved. Copyright © <script>document.write(new Date().getFullYear())</script> Material Kit by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-          </p>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 ms-auto">
+            <h5 class="mb-1">Explore a Fonte Completa</h5>
+            <p class="lead mb-0">Os números acima são um resumo da produção. Para verificar todos os detalhes acadêmicos, acesse o currículo oficial completo.</p>
+          </div>
+          <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
+            <a href="http://lattes.cnpq.br/5879015398476679" class="btn mb-0 me-2" target="_blank" style="background-color: #658142; border-color: #658142; color: #fff;">
+            <i class="fas fa-id-card me-1"></i>Currículo Lattes
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</footer>
+
+  <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+    <footer class="footer pt-5 mt-5">
+      <div class="container">
+        <div class=" row justify-content-center">
+          <div class="col-md-3 mb-4 text-center text-md-start">
+            <div>
+              <a href="index.html">
+                <i class="material-symbols-rounded mb-3 fs-1 text-dark">
+                  menu_book
+                </i>
+              </a>
+              <h6 class="font-weight-bolder mb-4">Biblioteca Ghedin</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div>
+              <h6 class="text-sm">Ajuda e Suporte</h6>
+              <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">          
+                  <span class="nav-link">
+                    Se precisar de ajuda com o site, entre em contato conosco via e-mail
+                    <a href="mailto:vitorialimaa3007@gmail.com" 
+                      style="color: #658142; font-weight: bold;">
+                      clicando aqui
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="text-center">
+              <p class="text-dark my-4 text-sm font-weight-normal">
+                Todos os direitos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Biblioteca Ghedin feito por <a href="https://www.creative-tim.com" target="_blank">Vitória Oliveira</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
   
