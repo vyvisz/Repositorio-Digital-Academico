@@ -29158,3 +29158,14 @@ pre[class*=language-] {
 }
 
 /*# sourceMappingURL=kit-free.css.map */
+
+/* ===================================
+   Imagem de Perfil Grande
+   =================================== */
+
+.profile-img-lg {
+    width: 250px !important; 
+    height: 250px !important; 
+    border-radius: 50% !important; 
+    object-fit: cover !important; 
+}
