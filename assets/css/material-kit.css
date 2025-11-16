@@ -29169,3 +29169,22 @@ pre[class*=language-] {
     border-radius: 50% !important; 
     object-fit: cover !important; 
 }
+
+/* Força o input-group-outline a respeitar a ordem dos elementos */
+.input-group.input-group-outline {
+  flex-direction: row !important;
+}
+
+/* Garante que o span (lupa) volte pro lado esquerdo */
+.input-group.input-group-outline > .input-group-text {
+  order: 0 !important;
+}
+
+/* Espaçamento interno bonitinho */
+.input-group-text.search-icon {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

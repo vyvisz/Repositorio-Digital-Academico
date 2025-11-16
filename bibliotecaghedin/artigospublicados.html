@@ -64,29 +64,29 @@
   </header>
   <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
-    <section class="py-5">
+    <section class="py-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mx-md-0">
             <div class="input-group input-group-lg input-group-outline mb-5">
-              <span class="input-group-text">
+              <span class="input-group-text search-icon">
                 <i class="material-symbols-rounded">search</i>
               </span>
-              <input type="text" class="form-control" id="filtroTabela" placeholder="Digite uma palavra-chave para filtrar (ex: Didática, 2020, Amazônia...)">
-              </div>
+              <input type="text" class="form-control" id="filtroTabela" placeholder="Pesquise por título, autor, ano..">
             </div>
-            <div class="col-lg-9 mx-auto">
+          </div>
+            <div class="col-lg-12 mx-auto">
               <div class="card">
                 <div class="table-responsive">
                   <table class="table align-items-center mb-0">
                     <thead>
                       <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Título</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Título e Autores</th>
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Ano</th>
                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Ações</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="listaDaTabela">
                       <tr>
                         <td>
                           <div class="d-flex px-2 py-1">
@@ -103,10 +103,10 @@
                           <a href="https://periodicoscientificos.ufmt.br/ojs/index.php/reamec/article/view/16947" target="_blank" class="btn btn-info mb-0" data-bs-toggle="tooltip" title="Acessar Link">
                             <i class="material-symbols-rounded">link</i>
                           </a>
-                          <a href="[COLOQUE O LINK DO PDF AQUI]" target="_blank" class="btn btn-danger mb-0" data-bs-toggle="tooltip" title="Baixar PDF">
+                          <a href="https://drive.google.com/uc?export=download&id=1rQJZ3U5p6Kv3Bxo8rd9l9GgcZKD0-kt2" target="_blank" class="btn btn-danger mb-0" data-bs-toggle="tooltip" title="Baixar PDF">
                             <i class="material-symbols-rounded">download</i>
                           </a>
-                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="Referência: CARVALHO, H. C.; MAFRA, J. R. E. S.; GHEDIN, E. L. Formação inicial de professores: cinco aprendizagens docentes essenciais. REVISTA REAMEC, v. 12, p. e24046, 2024." onclick="copiarCitacao(this)">
+                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="CARVALHO, Hamilton Cunha; MAFRA, José Ricardo e Souza; GHEDIN, Evandro Luís. FORMAÇÃO INICIAL DE PROFESSORES: CINCO APRENDIZAGENS DOCENTES ESSENCIAIS. REAMEC - Rede Amazônica de Educação em Ciências e Matemática, Cuiabá, v. 12, p. e24046, 2024. DOI: 10.26571/reamec.v12.16947. Disponível em: https://periodicoscientificos.ufmt.br/ojs/index.php/reamec/article/view/16947" onclick="copiarCitacao(this)">
                             <i class="material-symbols-rounded">edit</i>
                           </button>
                         </td>
@@ -115,22 +115,94 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-s">Formação inicial de professores: cinco aprendizagens docentes essenciais.</h6>
-                              <p class="text-xs text-secondary mb-0">CARVALHO, HAMILTON CUNHA; MAFRA, JOSÉ RICARDO E SOUZA; GHEDIN, EVANDRO LUÍS</p>
+                              <h6 class="mb-0 text-s">A formação do professor crítico-reflexivo: uma análise das produções científicas da CAPES nos últimos 10 anos.</h6>
+                              <p class="text-xs text-secondary mb-0">ARAÚJO, RUTH CRISTINA SOARES GOMES; GHEDIN, EVANDRO LUIZ; ARAÚJO, CLODOALDO PIRES</p>
                             </div>
                           </div>
                         </td>
                         <td>
-                          <span class="text-xs font-weight-bold mb-0">2024</span>
+                          <span class="text-xs font-weight-bold mb-0">2023</span>
                         </td>
                         <td class="align-middle text-center">
-                          <a href="https://periodicoscientificos.ufmt.br/ojs/index.php/reamec/article/view/16947" target="_blank" class="btn btn-info mb-0" data-bs-toggle="tooltip" title="Acessar Link">
+                          <a href="https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/713" target="_blank" class="btn btn-info mb-0" data-bs-toggle="tooltip" title="Acessar Link">
                             <i class="material-symbols-rounded">link</i>
                           </a>
-                          <a href="[COLOQUE O LINK DO PDF AQUI]" target="_blank" class="btn btn-danger mb-0" data-bs-toggle="tooltip" title="Baixar PDF">
+                          <a href="https://drive.google.com/uc?export=download&id=1dyLMLdwvPICfVnZt-7TqndRImmRUKGgi" target="_blank" class="btn btn-danger mb-0" data-bs-toggle="tooltip" title="Baixar PDF">
                             <i class="material-symbols-rounded">download</i>
                           </a>
-                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="Referência: CARVALHO, H. C.; MAFRA, J. R. E. S.; GHEDIN, E. L. Formação inicial de professores: cinco aprendizagens docentes essenciais. REVISTA REAMEC, v. 12, p. e24046, 2024." onclick="copiarCitacao(this)">
+                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="ARAÚJO, R. C. S. G.; GHEDIN, E. L.; ARAÚJO, C. P. A formação do professor crítico-reflexivo: uma análise das produções científicas da CAPES nos últimos 10 anos . OBSERVATÓRIO DE LA ECONOMÍA LATINOAMERICANA, [S. l.], v. 21, n. 7, p. 7263–7278, 2023. DOI: 10.55905/oelv21n7-079. Disponível em: https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/713." onclick="copiarCitacao(this)">
+                            <i class="material-symbols-rounded">edit</i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-s">Relações intergeracionais na Educação de Jovens e Adultos: relato de uma experiência com um projeto inclusivo de Matemática.</h6>
+                              <p class="text-xs text-secondary mb-0">JEAN, EVREN NEY DA SILVA; NASCIMENTO, GREICY OLIVEIRA; GHEDIN, EVANDRO LUIZ</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="text-xs font-weight-bold mb-0">2023</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <a href="https://ojs.focopublicacoes.com.br/foco/article/view/1508" target="_blank" class="btn btn-info mb-0" data-bs-toggle="tooltip" title="Acessar Link">
+                            <i class="material-symbols-rounded">link</i>
+                          </a>
+                          <a href="https://drive.google.com/uc?export=download&id=1urqXGmBq4cqYIeOa88VDKk2TXDv8tk1A" target="_blank" class="btn btn-danger mb-0" data-bs-toggle="tooltip" title="Baixar PDF">
+                            <i class="material-symbols-rounded">download</i>
+                          </a>
+                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="JEAN , E. N. da S. .; NASCIMENTO , G. O. .; GHEDIN, E. L. . RELAÇÕES INTERGERACIONAIS NA EDUCAÇÃO DE JOVENS E ADULTOS: RELATO DE UMA EXPERIÊNCIA COM UM PROJETO INCLUSIVO DE MATEMÁTICA. REVISTA FOCO, [S. l.], v. 16, n. 4, p. e1508, 2023. DOI: 10.54751/revistafoco.v16n4-010. Disponível em: https://ojs.focopublicacoes.com.br/foco/article/view/1508." onclick="copiarCitacao(this)">
+                            <i class="material-symbols-rounded">edit</i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-s">Tempos de Pandemia: A experiência do Estágio Docência no ensino superior utilizando o ERE.</h6>
+                              <p class="text-xs text-secondary mb-0">PEIXOTO, K. E. O.; SOUZA, E. S. E.; BORGES, H. S.; GHEDIN, Evandro</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="text-xs font-weight-bold mb-0">2021</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <a class="btn btn-info mb-0 disabled">
+                            <i class="material-symbols-rounded">link</i>
+                          </a>
+                          <a class="btn btn-danger mb-0 disabled"> 
+                            <i class="material-symbols-rounded">download</i>
+                          </a>
+                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="PEIXOTO, K. E. O. et al. TEMPOS DE PANDEMIA: A EXPERIÊNCIA DO ESTÁGIO DOCÊNCIA NO ENSINO SUPERIOR UTILIZANDO O ERE. HUMANIDADES & INOVAÇÃO, v. 8, p. 182-191, 2021." onclick="copiarCitacao(this)">
+                            <i class="material-symbols-rounded">edit</i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-s">A ética e a poética do amar como sentido de ser.</h6>
+                              <p class="text-xs text-secondary mb-0">GHEDIN, Evandro.; OLIVEIRA, E. S.</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="text-xs font-weight-bold mb-0">2009</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <a class="btn btn-info mb-0 disabled">
+                            <i class="material-symbols-rounded">link</i>
+                          </a>
+                          <a class="btn btn-danger mb-0 disabled"> 
+                            <i class="material-symbols-rounded">download</i>
+                          </a>
+                          <button type="button" class="btn btn-success mb-0" data-bs-toggle="tooltip" title="Copiar Citação" data-citacao="GHEDIN, E.; OLIVEIRA, E. S. O ESTÁGIO VINCULADO À PESQUISA NA FORMAÇÃO DE PROFESSORES DE CIÊNCIAS NAS SÉRIES INICIAIS DO ENSINO FUNDAMENTAL. Areté (Manaus), v. 3, p. 173-181, 2009." onclick="copiarCitacao(this)">
                             <i class="material-symbols-rounded">edit</i>
                           </button>
                         </td>
@@ -142,6 +214,23 @@
             </div>
         </div>
       </div>
+      <nav aria-label="Page navigation example" class="mt-5">
+        <ul class="pagination pagination-success justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="javascript:;" tabindex="-1">
+              <i class="material-symbols-rounded">chevron_left</i>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:;">
+              <i class="material-symbols-rounded">chevron_right</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </div>
 
@@ -183,11 +272,8 @@
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
   <script src="../assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-</body>
 
-</html>
-
-<script>
+  <script>
   function copiarCitacao(element) {
     const textoParaCopiar = element.getAttribute('data-citacao');
     navigator.clipboard.writeText(textoParaCopiar).then(function() {
@@ -208,3 +294,30 @@
     });
   }
 </script>
+ 
+<!--script para a pesquisa-->
+<script>
+
+  const filtroInput = document.getElementById('filtroTabela');
+  const listaDaTabela = document.getElementById('listaDaTabela');
+  const itensDaLista = listaDaTabela.getElementsByTagName('tr');
+
+  filtroInput.addEventListener('keyup', function() {
+    let filtro = filtroInput.value.toLowerCase();
+    for (let i = 0; i < itensDaLista.length; i++) {
+      let item = itensDaLista[i];
+      let textoDoItem = item.textContent || item.innerText;
+      textoDoItem = textoDoItem.toLowerCase();
+
+      if (textoDoItem.includes(filtro)) {
+        item.style.display = ""; 
+      } else {
+        item.style.display = "none"; 
+      }
+    }
+  });
+</script>
+
+</body>
+
+</html>
